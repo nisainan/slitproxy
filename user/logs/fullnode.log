@@ -1,0 +1,5 @@
+{"level":"WARN","time":"2022-08-12T14:27:25.949+0800","caller":"base/controller/controller.go:18","msg":"params error: Key: 'Login.Register.Username' Error:Field validation for 'Username' failed on the 'required' tag\nKey: 'Login.Register.Password' Error:Field validation for 'Password' failed on the 'required' tag","url":"POST: /api/v1/user/login"}
+{"level":"ERROR","time":"2022-08-12T14:27:52.925+0800","caller":"dao/mysql/user.go:57","msg":"GetUserByUsernamePass err : Error 1146: Table 'zta.user_demo' doesn't exist","url":"POST: /api/v1/user/login"}
+{"level":"ERROR","time":"2022-08-12T14:28:50.056+0800","caller":"dao/mysql/user.go:57","msg":"GetUserByUsernamePass err : record not found","url":"POST: /api/v1/user/login"}
+{"level":"ERROR","time":"2022-08-12T17:51:55.679+0800","caller":"dao/mysql/user.go:38","msg":"CreateUser err : Error 1054: Unknown column 'email' in 'field list'","url":"POST: /api/v1/user/register"}
+{"level":"ERROR","time":"2022-08-12T17:52:50.712+0800","caller":"dao/mysql/user.go:38","msg":"CreateUser err : Error 1292: Incorrect datetime value: '1660297970' for column 'created_at' at row 1","url":"POST: /api/v1/user/register"}
